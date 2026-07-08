@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación | GYMBROS Puente Alto</title>
+    <meta name="description" content="Encuentra a GYMBROS en Puente Alto, Santiago. Ven a entrenar al mejor gimnasio.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .location-section {
+            padding: 10rem 5% 6rem;
+            min-height: calc(100vh - 100px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .location-section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .location-section p {
+            font-size: 1.1rem;
+            color: rgba(229, 225, 216, 0.8);
+            margin-bottom: 3rem;
+        }
+
+        .map-container {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            background: rgba(255,255,255,0.02);
+            padding: 1rem;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            border-radius: 4px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">GYM<span>BROS</span></div>
+        <nav>
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">Sobre Nosotros</a></li>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="location.html" class="highlight">Ubicación</a></li>
+                <li><a href="index.html#contact" class="btn-primary-small">Únete Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="location-section">
+        <h1>Nuestra <span class="highlight">Ubicación</span></h1>
+        <p>Encuéntranos en José Luis Coo 0798, Puente Alto, Región Metropolitana.</p>
+        
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.910815998385!2d-70.5645526!3d-33.6076184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d65705190a7d%3A0x1b86022b65b6693e!2sJos%C3%A9%20Luis%20Coo%200798%2C%208180875%20Puente%20Alto%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1783546418388!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">GYM<span>BROS</span></div>
+                <p>Puente Alto, Santiago, Chile</p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 GYMBROS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
