@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes y Precios | GYMBROS Puente Alto</title>
+    <meta name="description" content="Conoce los planes de entrenamiento de GYMBROS en Puente Alto. Entrenamiento personalizado y evaluación física.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pricing-section {
+            padding: 10rem 5% 6rem;
+            min-height: calc(100vh - 100px);
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+
+        .pricing-header p {
+            font-size: 1.1rem;
+            color: rgba(229, 225, 216, 0.8);
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            padding: 3rem 2rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+            border-color: rgba(230, 104, 30, 0.3);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+            text-transform: uppercase;
+        }
+
+        .pricing-card .price {
+            font-size: 2.5rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-card ul {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 2rem;
+            flex-grow: 1;
+        }
+
+        .pricing-card ul li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.95rem;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .pricing-card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-card ul li::before {
+            content: '✓';
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+            font-weight: bold;
+        }
+
+        .fee-info {
+            text-align: center;
+            margin: 3rem auto;
+            max-width: 800px;
+            background: rgba(230, 104, 30, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid rgba(230, 104, 30, 0.2);
+        }
+
+        .fee-info h4 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        
+        .fee-info .price {
+            font-size: 2rem;
+            font-weight: 700;
+            font-family: var(--font-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .section-title-wrapper {
+            margin-top: 6rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .section-title-wrapper h2 {
+            font-size: 2.5rem;
+            color: var(--text-color);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .section-title-wrapper p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: rgba(229, 225, 216, 0.8);
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">GYM<span>BROS</span></div>
+        <button class="mobile-menu-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html#home">Inicio</a></li>
+                <li><a href="index.html#about">Sobre Nosotros</a></li>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="planes.html" class="highlight">Planes</a></li>
+                <li><a href="location.html">Ubicación</a></li>
+                <li><a href="index.html#contact" class="btn-primary-small">Únete Ahora</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pricing-section">
+        <div class="pricing-header">
+            <h1>Nuestros <span class="highlight">Planes</span></h1>
+            <p>Elige el plan que mejor se adapte a tus objetivos y comienza tu transformación.</p>
+        </div>
+
+        <div class="fee-info">
+            <h4>Matrícula y/o Activación</h4>
+            <div class="price">$15.000</div>
+        </div>
+
+        <div class="section-title-wrapper">
+            <h2>Planes de <span class="highlight">Entrenamiento</span></h2>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Pase Diario</h3>
+                <div class="price">$6.000</div>
+                <ul>
+                    <li>Acceso completo a las instalaciones por un día</li>
+                </ul>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Mensual</h3>
+                <div class="price">$30.000</div>
+                <ul>
+                    <li>Acceso completo a las instalaciones por un mes</li>
+                </ul>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Trimestral</h3>
+                <div class="price">$80.000</div>
+                <ul>
+                    <li>Acceso completo a las instalaciones por 3 meses</li>
+                </ul>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>Semestral</h3>
+                <div class="price">$150.000</div>
+                <ul>
+                    <li>Acceso completo a las instalaciones por 6 meses</li>
+                </ul>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+        </div>
+
+        <div class="fee-info">
+            <h4>Evaluación</h4>
+            <div class="price">$20.000</div>
+            <p>Incluye: Medición Antropométrica - Régimen de Alimentación</p>
+        </div>
+
+        <div class="section-title-wrapper">
+            <h2>Planes <span class="highlight">Personalizados</span></h2>
+            <p>Todos nuestros planes personalizados incluyen: Medición Antropométrica, Régimen de Alimentación y clases enfocadas en el objetivo del individuo (Salud, Estético o Competitivo).</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>03 Clases</h3>
+                <div class="price">$60.000</div>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>08 Clases</h3>
+                <div class="price">$120.000</div>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>12 Clases</h3>
+                <div class="price">$150.000</div>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+            <div class="pricing-card">
+                <h3>20 Clases</h3>
+                <div class="price">$210.000</div>
+                <a href="index.html#contact" class="btn-primary">Consultar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">GYM<span>BROS</span></div>
+                <p>José Luis Coo 0798, Puente Alto</p>
+                <p>Santiago, Chile</p>
+                <p style="margin-top: 0.5rem; font-weight: bold;"><a href="https://instagram.com/gymbros_p.alto" target="_blank" style="color: var(--primary-color); text-decoration: none;">@GYMBROS_P.ALTO</a></p>
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 GYMBROS. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            const btn = document.querySelector('.mobile-menu-btn');
+            nav.classList.toggle('active');
+            btn.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
