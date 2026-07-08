@@ -13,13 +13,18 @@
 <body>
     <header class="navbar">
         <div class="logo">GYM<span>BROS</span></div>
-        <nav>
+        <button class="mobile-menu-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
             <ul>
-                <li><a href="index.html#home">Inicio</a></li>
-                <li><a href="index.html#about">Sobre Nosotros</a></li>
-                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#home" onclick="toggleMenu()">Inicio</a></li>
+                <li><a href="index.html#about" onclick="toggleMenu()">Sobre Nosotros</a></li>
+                <li><a href="index.html#services" onclick="toggleMenu()">Servicios</a></li>
                 <li><a href="location.html">Ubicación</a></li>
-                <li><a href="index.html#contact" class="btn-primary-small">Únete Ahora</a></li>
+                <li><a href="index.html#contact" class="btn-primary-small" onclick="toggleMenu()">Únete Ahora</a></li>
             </ul>
         </nav>
     </header>
@@ -111,5 +116,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            const btn = document.querySelector('.mobile-menu-btn');
+            nav.classList.toggle('active');
+            btn.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>

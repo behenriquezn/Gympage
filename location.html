@@ -52,7 +52,12 @@
 <body>
     <header class="navbar">
         <div class="logo">GYM<span>BROS</span></div>
-        <nav>
+        <button class="mobile-menu-btn" aria-label="Abrir menú" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="index.html#home">Inicio</a></li>
                 <li><a href="index.html#about">Sobre Nosotros</a></li>
@@ -83,5 +88,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            const btn = document.querySelector('.mobile-menu-btn');
+            nav.classList.toggle('active');
+            btn.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
