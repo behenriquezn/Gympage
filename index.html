@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">GYM<span>BROS</span></div>
+        <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">GYM<span>BROS</span></a>
         <button class="mobile-menu-btn" aria-label="Abrir menú" onclick="toggleMenu()">
             <span></span>
             <span></span>
@@ -36,7 +36,6 @@
             <h1>FORJA TU<br><span class="highlight">LEGADO</span></h1>
             <p>El principal destino de fitness en Puente Alto, Santiago. Equipamiento de última generación, entrenamiento de élite y una comunidad de campeones.</p>
             <div class="hero-actions">
-                <a href="#contact" class="btn-primary">Prueba Gratis</a>
                 <a href="#services" class="btn-secondary">Instalaciones</a>
             </div>
         </div>
@@ -108,11 +107,20 @@
 
     <footer>
         <div class="footer-content">
-            <div class="footer-brand">
-                <div class="logo">GYM<span>BROS</span></div>
+            <div class="footer-brand" style="text-align: left;">
+                <a href="index.html" class="logo" style="text-decoration: none; color: inherit;">GYM<span>BROS</span></a>
                 <p>José Luis Coo 0798, Puente Alto</p>
                 <p>Santiago, Chile</p>
-                <p style="margin-top: 0.5rem; font-weight: bold;"><a href="https://instagram.com/gymbros_p.alto" target="_blank" style="color: var(--primary-color); text-decoration: none;">@GYMBROS_P.ALTO</a></p>
+                <div style="margin-top: 1rem;">
+                    <a href="https://www.instagram.com/gymbros_p.alto/" target="_blank" style="color: var(--primary-color); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: bold; font-size: 1.1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        @gymbros_p.alto
+                    </a>
+                </div>
             </div>
             <div class="footer-links">
                 <p>&copy; 2026 GYMBROS. Todos los derechos reservados.</p>
